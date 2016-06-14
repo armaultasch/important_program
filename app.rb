@@ -1,5 +1,5 @@
 require_relative("lib/cars.rb")
-# require_relative("lib/spaceship.rb")
+require_relative("lib/spaceship.rb")
 
 porsche = Car.new("Broom", 2)
 
@@ -9,8 +9,12 @@ bmw = Car.new("BROOOOOOM", 5)
 
 bmw.noise
 
-# boeing = SpaceShip.new("Woooosh", 50)
-# boeing.fly
+boeing = SpaceShip.new("Woooosh", 50)
+boeing.fly
 
-# boeing = SpaceShip.new("Brrrrmm", 100)
-# boeing.fly
+keeper = SpaceShip.new("Brrrrmm", 100)
+keeper.fly
+keeper.travel("Pluto")
+keeper.travel("Mars")
+
+p keeper.list_of_planets
