@@ -7,4 +7,6 @@ class Car
 	def noise
 		puts @sound, @capacity
 	end
+
+	
 end
